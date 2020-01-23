@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header class="bt-shw">
+		<h1>Calculo Potencia</h1>
+	</header>
+	<section>
+		<div id="box-body">
+			<div id="div-left" class="fleft bt-shw">
+				<div id="saida-potencia">
+					<h4>Selecione a potencia que saira:</h4> 
+					<select id="potenciaSaindo" name="potenciaSaindo" class="bt">
+						<option selected="selected" value='3'>B+ (3)</option>
+						<option value='5'>C+ (5)</option>
+						<option value='7'>C++(7)</option>
+					</select>
+				</div>
+				<div id="media-metros">
+					<h4>Distancia em metros: </h4>
+					<input type="number"  id="distanciaM" name="distanciaM" placeholder="distancia" min="0" class="bt">
+				</div>
+				<div id="freguencia">
+					<h4>Frequência:</h4>
+					<select name="frequencia" class="bt">
+						<option selected="selected" value='0.35'>1310</option>
+						<option value='0.2'>1490</option>
+						<option value='0.2'>1550</option>
+					</select>
+				</div>
+				
+				<div id="topologia-rede">
+					<h4>Topologia(divisão da fibra):</h4>
+					<select name="spliter" id="selectSpliter" class="bt"> 
+						<option selected="selected" value="balanceado">balanceado</option>
+						<option value="desbalanceado">desbalanceado</option>
+						<option value="mista" selected>mista</option>
+					</select>
+				</div>
+				<div id="divisao-fibra" style="visibility: hidden;">
+					<h4>Divisão:</h4>
+					<div>
+						<select id="option-desbalanceado" class="selectDivisao bt" style="display: none;">
+							<option selected="selected" value="0/8">0/8</option>
+							<option value="1/7">1/7</option>
+							<option value="2/6">2/6</option>
+							<option value="3/5">3/5</option>
+						</select>
+						<select id="option-balanceado" class="selectDivisao bt">
+							<option selected="selected" value="1x2">1x2</option>
+							<option value="1x4">1x4</option>
+							<option value="1x8">1x8</option>
+						</select>
+					</div>
+				</div>
+				
+				<div id="buttons">
+					<button id="pesquisar" class="bt bt-vd bta bt-shw">Iniciar</button>
+				</div>
+				
+			</div>
+			
+			<div id="demo" class="fleft" >
+				
+			</div>
+		</div>
+	</section>
+	<footer></footer>
+	<script src="./js/calculo.js"></script>
+</body>
+</html>
